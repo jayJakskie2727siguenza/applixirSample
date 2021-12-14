@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="./styles/styles.css">
+		<title>Applixir</title>
+	</head>
+	<body>
+
+        
+
+
+    
+        
+
+		<h1>Sample Applixir</h1>
+        <button type="button" class="button" id="showRewardAdButton">Show Reward Ad</button>
+        <div class="videoWrapper">
+            <div id="applixir_vanishing_div" hidden>
+                <iframe id="applixir_parent" allow="autoplay; fullscreen"></iframe>
+            </div>
+        </div>
+     
+      
+
+    <script type="text/javascript" src="https://cdn.applixir.com/applixir.sdk3.0m.js"></script>
+    <script type="application/javascript">
+       
+        var options = {                                     // Video Ad Options
+             zoneId: 4620,
+             accountId: 5905,                               // Required field for RMS                                                                               
+             gameId: 6792,                                  // Required field for RMS
+             adStatusCb: adStatusCallback,
+            //  userId: currentUserID(),                      // Required field for RMS
+            //  custom: currentUserReward(),
+        };  
+    
+     
+
+    
+       function adStatusCallback(status) {
+            console.log('Ad Status: ' + status);
+       }
+    
+
+       let playBtn = document.getElementById("showRewardAdButton")
+    
+      playBtn.addEventListener('click',()=>{
+        invokeApplixirVideoUnit(options);          //play the video ad
+          
+      })
+    
+    </script>   
+
+	</body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACJ,gBAAgB,EAAE,IAAI;CACtB;;AAED,AAAA,EAAE,CAAC;EACF,KAAK,EAAE,KAAK;CACZ;;ACND,AAAA,OAAO,CAAC;EACP,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,SAAS;EAClB,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,OAAO;CACf;;ACPD,AAAA,aAAa,CAAC;EACb,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,IAAI;CAChB",
+    "sources": [
+        "styles.scss",
+        "global.scss",
+        "button.scss",
+        "videoWrapper.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
