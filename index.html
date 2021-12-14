@@ -35,8 +35,8 @@
              accountId: 5905,                               // Required field for RMS                                                                               
              gameId: 6792,                                  // Required field for RMS
              adStatusCb: adStatusCallback,
-             userId: currentUserID,                      // Required field for RMS
-             custom: currentUserReward,
+             userId: xxx,                      // Required field for RMS
+             custom: xxx,
         };  
     
         
@@ -46,13 +46,7 @@
             console.log('Ad Status: ' + status);
        }
 
-       function currentUserID(status){
-           console.log(`userId: ${status}`)
-       }
-
-       function currentUserReward(status){
-           console.log(`custom: ${status}`)
-       }
+    
     
 
        let playBtn = document.getElementById("showRewardAdButton")
