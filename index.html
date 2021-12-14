@@ -25,17 +25,12 @@
      
       
 
-    <script type="text/javascript" src="https://cdn.applixir.com/applixir.sdk3.0m.js"></script>
+    <script type="text/javascript" src="https://cdn.applixir.com/applixir.sdk3.0m.js">
+
+    </script>
     <script type="application/javascript">
        
-        var options = {                                     // Video Ad Options
-             zoneId: 4620,
-             accountId: 5905,                               // Required field for RMS                                                                               
-             gameId: 6792,                                  // Required field for RMS
-             adStatusCb: adStatusCallback,
-             userId: currentUserID(),                      // Required field for RMS
-             custom: currentUserReward(),
-        };  
+    
     
      
 
@@ -48,7 +43,14 @@
        let playBtn = document.getElementById("showRewardAdButton")
     
       playBtn.addEventListener('click',()=>{
-        invokeApplixirVideoUnit(options);          //play the video ad
+        invokeApplixirVideoUnit({                                     // Video Ad Options
+             zoneId: 4620,
+             accountId: 5905,                               // Required field for RMS                                                                               
+             gameId: 6792,                                  // Required field for RMS
+             adStatusCb: adStatusCallback,
+             userId: currentUserID(),                      // Required field for RMS
+             custom: currentUserReward(),
+        });          //play the video ad
           
       })
     
